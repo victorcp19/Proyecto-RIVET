@@ -1,0 +1,71 @@
+.sombra-der{
+    -webkit-box-shadow: 8px 8px 4px 0px #fbbf5e;
+    -moz-box-shadow: 8px 8px 4px 0px #fbbf5e;
+    box-shadow: 8px 8px 4px 0px #fbbf5e;
+}
+
+.sombra-izq{
+    -webkit-box-shadow: -8px 8px 4px 0px #fbbf5e;
+    -moz-box-shadow: -8px 8px 4px 0px #fbbf5e;
+    box-shadow: -8px 8px 4px 0px #fbbf5e;
+}
+
+/*BANNER SERVICIOS*/
+.servicios-main{
+    height: 35rem;
+    background-image: url(../img/banner/servicios.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.contenido-centrado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.titulo-banner{
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+
+/*SECCIONES SERVICIOS*/
+.contenedor{
+    padding: 40px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+.contenedor div h2{
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 10px 0;
+    color: var(--azul);
+}
+
+.contenedor div p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: justify;
+}
+
+.contenido-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 100%;
+}
+
+.contenedor div img{
+    width: 95%;
+    border-radius: 10px;
+}

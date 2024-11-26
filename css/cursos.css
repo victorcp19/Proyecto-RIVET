@@ -1,0 +1,67 @@
+.sombra{
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(239,239,239,1);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(239,239,239,1);
+    box-shadow: 0px 0px 10px 5px rgba(239,239,239,1);
+}
+
+.sobre-nosotros-main{
+    height: 35rem;
+    background-image: url(../img/banner/Cursos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.contenido-centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.titulo-banner{
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+/*CONTENIDO PRINCIPAL*/
+
+main{
+    display: grid;
+}
+
+
+.column-2{
+    border: 1px solid #f0f0f0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+
+}
+
+.column-2 .contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 20px;
+}
+
+.column-2 .contenido h2{
+    color: var(--celeste);
+}
+
+.column-2 .contenido p{
+    text-align: justify;
+    line-height: 23px;
+}
+
+.column-2 .bg-img{
+    min-height: 400px;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 0 20px 20px 0;
+}
