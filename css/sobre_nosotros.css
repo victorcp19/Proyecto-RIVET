@@ -34,6 +34,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
     margin-bottom: 50px;
+    align-items: center;
 }
 
 .contenedor div h2{
@@ -90,12 +91,14 @@
     font-size: 2.6rem;
     font-weight: 600;
     margin: 10px 0;
+    text-align: center;
 }
 
 .doctor .cargo{
     font-size: 2.3rem;
     font-weight: 300;
     margin: 0 0 10px;
+    text-align: center;
 }
 
 .equipos .medico{
@@ -103,4 +106,36 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 20px;
+}
+
+@media (max-width: 960px){
+    .equipos .medico{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+
+}
+
+@media (max-width: 780px){
+
+    .sobre-nosotros-main{
+        margin-bottom: 0;
+    }
+    .contenedor{
+        grid-template-columns: 1fr;
+        margin-bottom: 50px;
+    }
+
+    .contenedor div h2{
+        text-align: center;
+    }
+
+    .contenedor div{
+        text-align: center;
+    }
+
+    .contenedor div img{
+        width: 70%;
+    }
+
 }

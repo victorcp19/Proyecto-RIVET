@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preload" href="css/nav-footer.css" as="style">
@@ -19,53 +20,98 @@
     <header class="main-header">
         <div class="content-logo">
             <a href="index.html">
-                <img src="img/rivetlogo.png" alt="">
+                <img src="img/rivetlogo.png" alt="Logo de la página">
             </a>
         </div>
-        <div class="content-nav">
+        <div id="nav" class="content-nav hidden">
             <nav>
-                <a class="celeste" href="index.html">Inicio</a>
-                <a class="celeste" href="sobre_nosotros.html">Sobre Nosotros</a>
-                <a class="celeste" href="servicios.html">Servicios</a>
-                <a class="celeste" href="nuestras_especialidades.html">Nuestras Especialidades</a>
-                <a class="celeste" href="cursos.html">Cursos</a>
-                <a class="celeste" href="contactanos.html">Contáctanos</a>
-                <a class="celeste" href="http://wa.me/+51947309121" target="_blank">WhatsApp</a>
+                <ul>
+                    <li><a class="celeste" href="index.html">Inicio</a></li>
+                    <li><a class="celeste" href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                    <li><a class="celeste" href="servicios.html">Servicios</a></li>
+                    <li><a class="celeste" href="nuestras_especialidades.html">Nuestras Especialidades</a></li>
+                    <li><a class="celeste" href="cursos.html">Cursos</a></li>
+                    <li><a class="celeste" href="contactanos.html">Contáctanos</a></li>
+                </ul>
             </nav>
+        </div>
+        <div class="whatsapp">
+            <a href="http://wa.me/+51947309121" target="_blank"><i class="icon icon-whatsapp"></i></a>
+        </div>
+        <div id="abrir" class="open-menu visible">
+            <button type="button"><i class="icon icon-menu"></i></button>
+        </div>
+        <div id="close" class="close-menu">
+            <button><i class="icon icon-cross"></i></button>
         </div>
     </header>
     <main>
         <h1>Contactate con nosotros</h1>
         <div class="column-2">
             <section>
-                <p>Para mayor información o solicitar nuestros servicios, por favor llene el formulario o envianos </p>
-                <h2>Dirección</h2>
-                <p>Av. General Trinidad Moran 653 Line</p>
-                <h2>Telefóno</h2>
-                <p>+51 947 309 121</p>
-                <h2>Correo Electrónico</h2>
-                <p>info@rivetperu.com</p>
-                <h2>Horario de atención</h2>
-                <p>Lunes a viernes: 10:00am a 8:00pm</p>
-                <p>Sábado: 10:00am a 6:00pm</p>
+                <p>Para mayor información o solicitar nuestros servicios, por favor llene el formulario o envianos un mensaje a nuestro correo.</p>
+                <div class="item">
+                    <div class="item-icon">
+                        <i class="icon icon-location2"></i>
+                    </div>
+                    <div>
+                        <h2>Dirección</h2>
+                        <p>Av. General Trinidad Moran 653 Line</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-icon">
+                        <i class="icon icon-phone"></i>
+                    </div>
+                    <div>
+                        <h2>Telefóno</h2>
+                        <p>+51 947 309 121</p>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="item-icon">
+                        <i class="icon icon-envelop"></i>
+                    </div>
+                    <div>
+                        <h2>Correo Electrónico</h2>
+                        <p>info@rivetperu.com</p>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="item-icon">
+                        <i class="icon icon-clock"></i>
+                    </div>
+                    <div>
+                        <h2>Horario de atención</h2>
+                        <p>Lunes a viernes: 10:00am a 8:00pm</p>
+                        <p>Sábado: 10:00am a 6:00pm</p>
+                    </div>
+                </div>
+                
+                
             </section>
-            <section>
+            <section class="form">
+                <h2 class="blanco title-form">Formulario de contacto</h2>
                 <form action="">
                     <fieldset>
-                        <legend>Formulario de contacto</legend>
                         <div>
                             <input type="text" placeholder="Nombres">
                             <input type="text" placeholder="Apellidos">
                         </div>
                         <div>
                             <input type="email" placeholder="Correo Electronico">
-                            <input type="number" placeholder="Teléfono" maxlength="9">
+                            <input type="tel" placeholder="Teléfono" maxlength="9">
                         </div>
                         <div>
-                            <input type="text" placeholder="Asunto">
+                            <input class="extend" type="text" placeholder="Asunto">
                         </div>
                         <div>
-                            <textarea name="" id="" placeholder="Mensaje"></textarea>
+                            <textarea class="extend" name="" id="" placeholder="Mensaje" rows="6"></textarea>
+                        </div>
+                        <div class="content-button">
+                            <input class="boton extend" type="submit" value="Enviar Mensaje">
                         </div>
                     </fieldset>
                 </form>
@@ -73,7 +119,7 @@
         </div>
     </main>
     <section class="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3901.3245767546628!2d-77.038672!3d-12.089918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c85ec9762013%3A0xbc241abc1f8b58d5!2sAv.%20Gral.%20Trinidad%20Mor%C3%A1n%20653%2C%20Lince%2015073%2C%20Per%C3%BA!5e0!3m2!1ses-419!2sus!4v1731411661371!5m2!1ses-419!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3901.3245767546628!2d-77.038672!3d-12.089918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c85ec9762013%3A0xbc241abc1f8b58d5!2sAv.%20Gral.%20Trinidad%20Mor%C3%A1n%20653%2C%20Lince%2015073%2C%20Per%C3%BA!5e0!3m2!1ses-419!2sus!4v1731411661371!5m2!1ses-419!2sus"  height="600" loading="lazy"></iframe>
     </section>
     <footer class="bg-celeste">
         <div class="contenedor-footer bg-celeste">
@@ -112,10 +158,22 @@
             <div class="columna">
                 <h2 class="blanco">Contáctanos</h2>
                 <ul>
-                    <li class="blanco">Av. General Trinidad Morán 653 Lince</li>
-                    <li class="blanco">+51 947 309 121</li>
-                    <li class="blanco">info@rivetperu.com</li>
-                    <li class="blanco">Lunes a viernes: 10:00am a 8:00pm Sábado: 10:00am a 6:00pm</li>
+                    <li class="blanco">
+                        <i class="icon icon-location2"></i>
+                        <span></span>Av. General Trinidad Morán 653 Lince</span>
+                    </li>
+                    <li class="blanco">
+                        <i class="icon icon-phone"></i>
+                        <span>+51 947 309 121</span>
+                    </li>
+                    <li class="blanco">
+                        <i class="icon icon-envelop"></i>
+                        <span>info@rivetperu.com</span>
+                    </li>
+                    <li class="blanco">
+                        <i class="icon icon-clock"></i>
+                        <span>Lunes a viernes: 10:00am a 8:00pm <br>Sábado: 10:00am a 6:00pm</span>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -123,5 +181,6 @@
             <p class="blanco">2023 Rivet. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

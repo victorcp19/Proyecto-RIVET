@@ -173,3 +173,74 @@
     width: 80%;
     padding: 0 2rem 0 0;
 }
+
+@media (max-width: 960px){
+    .contenedor-servicios{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 20px;
+    }
+
+    .contenedor-porque .card-porque{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-top: 1.5rem;
+    }
+
+    .card-porque .contenido-porque{
+        text-align: center;
+    }
+}
+
+@media (max-width: 780px){
+    .contenedor-servicios{
+        grid-template-columns: 1fr;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .nuestros-servicios .bg-opacity .contenido{
+        width: 80%;
+    }
+
+    .nuestros-servicios .bg-opacity .contenido h1{
+        font-size: 3.5rem;
+    }
+
+    .sobre-nosotros{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .sobre-nosotros .contenido{
+        grid-row-start: 2;
+        align-items: center;
+    }
+
+    .sobre-nosotros .imagen{
+        width: 70%;
+    }
+
+    .contenedor-porque{
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-porque .card-porque{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 1.5rem;
+    }
+
+    .card-porque .contenido-porque{
+        text-align: left;
+    }
+
+    .title{
+        font-size: 3rem;
+        margin: 20px auto;
+    }
+
+}

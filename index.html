@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preload" href="css/nav-footer.css" as="style">
@@ -19,19 +20,29 @@
     <header class="main-header">
         <div class="content-logo">
             <a href="index.html">
-                <img src="img/rivetlogo.png" alt="">
+                <img src="img/rivetlogo.png" alt="Logo de la página">
             </a>
         </div>
-        <div class="content-nav">
+        <div id="nav" class="content-nav hidden">
             <nav>
-                <a class="celeste" href="index.html">Inicio</a>
-                <a class="celeste" href="sobre_nosotros.html">Sobre Nosotros</a>
-                <a class="celeste" href="servicios.html">Servicios</a>
-                <a class="celeste" href="nuestras_especialidades.html">Nuestras Especialidades</a>
-                <a class="celeste" href="cursos.html">Cursos</a>
-                <a class="celeste" href="contactanos.html">Contáctanos</a>
-                <a class="celeste" href="http://wa.me/+51947309121" target="_blank">WhatsApp</a>
+                <ul>
+                    <li><a class="celeste" href="index.html">Inicio</a></li>
+                    <li><a class="celeste" href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                    <li><a class="celeste" href="servicios.html">Servicios</a></li>
+                    <li><a class="celeste" href="nuestras_especialidades.html">Nuestras Especialidades</a></li>
+                    <li><a class="celeste" href="cursos.html">Cursos</a></li>
+                    <li><a class="celeste" href="contactanos.html">Contáctanos</a></li>
+                </ul>
             </nav>
+        </div>
+        <div class="whatsapp">
+            <a href="http://wa.me/+51947309121" target="_blank"><i class="icon icon-whatsapp"></i></a>
+        </div>
+        <div id="abrir" class="open-menu visible">
+            <button type="button"><i class="icon icon-menu"></i></button>
+        </div>
+        <div id="close" class="close-menu">
+            <button><i class="icon icon-cross"></i></button>
         </div>
     </header>
     <main>
@@ -188,10 +199,22 @@
             <div class="columna">
                 <h2 class="blanco">Contáctanos</h2>
                 <ul>
-                    <li class="blanco">Av. General Trinidad Morán 653 Lince</li>
-                    <li class="blanco">+51 947 309 121</li>
-                    <li class="blanco">info@rivetperu.com</li>
-                    <li class="blanco">Lunes a viernes: 10:00am a 8:00pm Sábado: 10:00am a 6:00pm</li>
+                    <li class="blanco">
+                        <i class="icon icon-location2"></i>
+                        <span></span>Av. General Trinidad Morán 653 Lince</span>
+                    </li>
+                    <li class="blanco">
+                        <i class="icon icon-phone"></i>
+                        <span>+51 947 309 121</span>
+                    </li>
+                    <li class="blanco">
+                        <i class="icon icon-envelop"></i>
+                        <span>info@rivetperu.com</span>
+                    </li>
+                    <li class="blanco">
+                        <i class="icon icon-clock"></i>
+                        <span>Lunes a viernes: 10:00am a 8:00pm <br>Sábado: 10:00am a 6:00pm</span>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -199,5 +222,6 @@
             <p class="blanco">2023 Rivet. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

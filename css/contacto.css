@@ -3,27 +3,140 @@ h1{
     text-align: center;
     font-size: 6rem;
     font-weight: 600;
+    margin: 20px 0;
     
 }
 
 .column-2{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    padding: 0 20px;
+}
+
+.column-2 section .item{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.column-2 section .item h2{
+    margin: 0 0 10px;
+}
+
+.column-2 section .item p{
+    margin: 5px 0 0 0;
+}
+
+section .item .item-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--celeste);
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    color: white;
+}
+
+section .item .item-icon i{
+    font-size: 3rem;
 }
 
 /*FORMULARIO*/
-form{
+.form{
     background-color: var(--amarillo);
     padding: 20px;
+    border-radius: 10px;
+}
+
+.title-form{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 20px;
+}
+
+fieldset div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+fieldset div input, textarea{
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+fieldset div input:focus{
+    border: none;
+    background-color: antiquewhite;
+}
+
+.extend{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    gap: 0;
+}
+
+.boton{
+    font-size: 17px;
+    font-weight: 500;
+    padding: 15px 30px;
     border-radius: 20px;
+    background-color: var(--celeste);
+    color: var(--blanco);
+}
+
+.content-button{
+    justify-items: center;
 }
 
 /*MAPA*/
 .mapa{
+    box-sizing: border-box;
     width: 100%;
+    margin-top: 20px;
 }
 
 .mapa iframe{
-    width: 100%;
+    width: -webkit-fill-available;
     height: 500px;
+    margin: 0 10px;
+    
+}
+
+/*RESPONSIVE ADAPTADO A MOVILES*/
+
+
+@media (max-width: 960px){
+
+    h1{
+        font-size: 4rem;
+        font-weight: 600;
+        margin: 20px 0;
+        
+    }
+    .column-2{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        padding: 0 20px;
+    }
+
+}
+
+@media (max-width: 780px){
+    fieldset div{
+        grid-template-columns: 1fr;
+    }
 }
